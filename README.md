@@ -23,15 +23,15 @@ All-in-focus imaging is a key computational imaging technique for scenarios that
     <tr>
       <td align="center" width="33%">
         <img src="assets/zeromotion_images.gif" width="240"/>
-        <br/><sub>Image stacks</sub>
+        <br/><sub>**Image stacks**</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/zeromotion_events.gif" width="240"/>
-        <br/><sub>Event stacks</sub>
+        <br/><sub>**Event stacks**</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/zeromotion_fuse.gif" width="240"/>
-        <br/><sub>fuse stacks</sub>
+        <br/><sub>**fuse stacks**</sub>
       </td>
     </tr>
   </table>
@@ -153,7 +153,7 @@ test_root/
     └── event_stack/
 ```
 
-Each dataset folder (e.g., MobileDepth, Middlebury, FlyingThings3D, Road-MF, NYUDepthV2) should contain a `image_stack` subfolder with multiple scene folders. Each scene folder contains the multi-focus image stack numbered sequentially.
+Each dataset folder (e.g., MobileDepth, Middlebury, FlyingThings3D, Road-MF, NYUDepthV2) should contain image_stack and image_stack subfolder with multiple scene folders. Each scene folder contains the multi-focus image stack or event stack numbered sequentially.
 
 Run prediction on datasets:
 ```bash
@@ -166,22 +166,23 @@ python predict_datasets.py \
 ```
 
 The framework will:
-1. Test on each dataset independently
-2. Generate fusion results for each scene
-3. Save results in separate folders for dataset
+1. Test on each dataset independently.
+2. Generate fusion results for each scene.
+3. Save results in separate folders for dataset.
 
 Parameters:
-- `--image_root`: Image_stack root directory containing test datasets
-- `--event_root`: Event_stack root directory containing test datasets
-- `--test_datasets`: List of dataset names to test (e.g., MobileDepth or Middlebury)
-- `--output_dir`: Directory for saving results
-- `--model_path`: Path to model weights file (optional, defaults to `model.pth` in root directory)
+- `--image_root`: Image_stack root directory containing test datasets.
+- `--event_root`: Event_stack root directory containing test datasets.
+- `--test_datasets`: List of dataset names to test (e.g., MobileDepth or Middlebury).
+- `--output_dir`: Directory for saving results.
+- `--model_path`: Path to model weights file (optional, defaults to `model.pth` in root directory).
 
 
 
 ### 📈 Predict Image Pair Datasets
 
-For processing image pair datasets with A/B folder structure, use the `predict_pair_datasets.py` script. This script processes each dataset independently, similar to `predict_datasets.py`, and is specifically designed for datasets where images are organized as pairs in separate 'A' and 'B' subfolders.
+For processing image-pair datasets with an A/B folder structure, use the `predict_datasets.py` script. This script processes each dataset independently, and is specifically designed for datasets where both the image stack and the corresponding event stack are organized as paired data in separate `A` and `B` subfolders, with each A/B pair  strictly aligned  between the two modalities.
+
 
 Organize your image pair datasets as follows:
 
