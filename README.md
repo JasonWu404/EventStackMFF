@@ -23,15 +23,15 @@ All-in-focus imaging is a key computational imaging technique for scenarios that
     <tr>
       <td align="center" width="33%">
         <img src="assets/zeromotion_images.gif" width="240"/>
-        <br/><sub>**Image stacks**</sub>
+        <br/><sub>Image stacks</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/zeromotion_events.gif" width="240"/>
-        <br/><sub>**Event stacks**</sub>
+        <br/><sub>Event stacks</sub>
       </td>
       <td align="center" width="33%">
         <img src="assets/zeromotion_fuse.gif" width="240"/>
-        <br/><sub>**fuse stacks**</sub>
+        <br/><sub>fuse stacks</sub>
       </td>
     </tr>
   </table>
