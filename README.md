@@ -279,7 +279,7 @@ project_root/
 ```
 
 Key directory structure requirements:
-- Each dataset is provided via three root directories: img_stack, evt_stack, and depth_continuous
+- Each training and test dataset is provided via three root directories: img_stack, evt_stack, and depth_continuous
 - In img_stack, each scene has its own folder containing sequentially numbered images (e.g., 1.png, 2.png, ...)
 - In evt_stack, each scene has a corresponding folder with the same name as in img_stack, also containing sequentially numbered event frames (e.g., 1.png, 2.png, ...) strictly aligned with the image indices
 - In depth_continuous, each scene has a corresponding continuous depth map with the same name as its stack folder (e.g., scene1.png for scene1/)
