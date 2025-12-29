@@ -280,25 +280,25 @@ project_root/
 ```
 
 Key directory structure requirements:
-- Each training and test dataset is provided via three root directories: img_stack, evt_stack, and depth_continuous
-- In img_stack, each scene has its own folder containing sequentially numbered images (e.g., 1.png, 2.png, ...)
-- In evt_stack, each scene has a corresponding folder with the same name as in img_stack, also containing sequentially numbered event frames (e.g., 1.png, 2.png, ...) strictly aligned with the image indices
-- In depth_continuous, each scene has a corresponding continuous depth map with the same name as its stack folder (e.g., scene1.png for scene1/)
-- For every scene and index i, the following correspondence must hold: img_stack/sceneX/i.png ↔ evt_stack/sceneX/i.png ↔ depth_continuous/sceneX.png
-- All training and validation datasets follow the same structure as shown in the examples above
-- Image stack frames should be in PNG, JPG, or BMP format
-- Event stack frames should be in PNG, JPG, or BMP format
-- Depth maps should be in grayscale format
+- Each training and test dataset is provided via three root directories: img_stack, evt_stack, and depth_continuous.
+- In img_stack, each scene has its own folder containing sequentially numbered images (e.g., 1.png, 2.png, ...).
+- In evt_stack, each scene has a corresponding folder with the same name as in img_stack, also containing sequentially numbered event frames (e.g., 1.png, 2.png, ...) strictly aligned with the image indices.
+- In depth_continuous, each scene has a corresponding continuous depth map with the same name as its stack folder (e.g., scene1.png for scene1/).
+- For every scene and index i, the following correspondence must hold: img_stack/sceneX/i.png ↔ evt_stack/sceneX/i.png ↔ depth_continuous/sceneX.png.
+- All training and validation datasets follow the same structure as shown in the examples above.
+- Image stack frames should be in PNG, JPG, or BMP format.
+- Event stack frames should be in PNG, JPG, or BMP format.
+- Depth maps should be in grayscale format.
 
 The framework supports up to 3 training datasets and 3 validation datasets simultaneously. You can control which datasets to use during training with the following flags:
 - `--use_train_dataset_1` to `--use_train_dataset_3`
 - `--use_val_dataset_1` to `--use_val_dataset_3`
 
 During training, the framework will:
-1. Train on all enabled training datasets
-2. Validate on all enabled validation datasets separately
-3. Save validation metrics for each dataset independently
-4. Generate visualization results for each validation dataset
+1. Train on all enabled training datasets.
+2. Validate on all enabled validation datasets separately.
+3. Save validation metrics for each dataset independently.
+4. Generate visualization results for each validation dataset.
 
 Training command example with multiple datasets:
 ```bash
