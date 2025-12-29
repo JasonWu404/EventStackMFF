@@ -1,5 +1,5 @@
 # EventStackMFF
-Official  implementation for All-in-Focus Imaging via Focal Depth Regression Guided by Event Focal Stack
+📚 Official  implementation for All-in-Focus Imaging via Focal Depth Regression Guided by Event Focal Stack
 
 
 
@@ -11,6 +11,7 @@ Official  implementation for All-in-Focus Imaging via Focal Depth Regression Gui
 - [Data Preparation](#-data-preparation)
 - [Downloads](#-downloads)
 - [Checkpoints](#-checkpoints)
+- [Citation](#-citation)
 - [Acknowledgments](#-acknowledgments)
 
 ## 🗺️ Overview
@@ -326,7 +327,37 @@ python train_event.py \
 
 For detailed parameter descriptions, please refer to the source code.
 
+## 📚 Citation
 
+EventStackMFF is developed based on our previous work, StackMFF and StackMFF V2. If this project is helpful for your research, you are welcome to refer to and cite our prior papers on image-stack-based multi-focus fusion:
+
+<details>
+<summary>📋 BibTeX</summary>
+
+```bibtex
+@article{xie2025one,
+  title={One-shot multi-focus image stack fusion via focal depth regression},
+  author={Xie, Xinzhe and Guo, Buyu and He, Shuangyan and Gu, Yanzhen and Li, Yanjun and Li, Peiliang},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={162},
+  pages={112667},
+  year={2025},
+  publisher={Elsevier}
+}
+
+@article{xie2025stackmff,
+  title={StackMFF: end-to-end multi-focus image stack fusion network},
+  author={Xie, Xinzhe and Qingyan, Jiang and Chen, Dong and Guo, Buyu and Li, Peiliang and Zhou, Sangjun},
+  journal={Applied Intelligence},
+  volume={55},
+  number={6},
+  pages={503},
+  year={2025},
+  publisher={Springer}
+}
+```
+
+</details>
 
 
 ## 🙏 Acknowledgments
