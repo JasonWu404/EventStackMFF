@@ -336,7 +336,27 @@ EventStackMFF is developed based on our previous work, StackMFF and StackMFF V2.
 <summary>📋 BibTeX</summary>
 
 ```bibtex
-@article{xie2025one,
+
+@misc{xie2025stackmffv4,
+      title={Generative Multi-Focus Image Fusion}, 
+      author={Xinzhe Xie and Buyu Guo and Bolin Li and Shuangyan He and Yanzhen Gu and Qingyan Jiang and Peiliang Li},
+      year={2025},
+      eprint={2512.21495},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.21495}, 
+}
+
+@article{xie2025stackmffv3,
+  title        = {General Multi-focus Image Fusion Network},
+  author       = {Xie, Xinzhe and Guo, Buyu and Li, Bolin and He, Shuangyan and Gu, Yanzhen and Jiang, Qingyan and Li, Peiliang},
+  year         = {2025},
+  note         = {Available at SSRN: \url{https://ssrn.com/abstract=5954614} or \url{http://dx.doi.org/10.2139/ssrn.5954614}},
+  journal      = {SSRN Electronic Journal},
+  doi          = {10.2139/ssrn.5954614}
+}
+
+@article{xie2025stackmffv2,
   title={One-shot multi-focus image stack fusion via focal depth regression},
   author={Xie, Xinzhe and Guo, Buyu and He, Shuangyan and Gu, Yanzhen and Li, Yanjun and Li, Peiliang},
   journal={Engineering Applications of Artificial Intelligence},
