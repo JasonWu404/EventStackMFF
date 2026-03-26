@@ -20,7 +20,7 @@ All-in-focus imaging is a key computational imaging technique for scenarios that
 
 <div align="center">
   <img src="assets/figure_17.jpg" width="500px"/>
-  <p><b>Coaxial acquisition platform for event cameras and RGB cameras</b></p>
+  <p><b>Coaxial acquisition platform for Event camera and RGB camera</b></p>
 </div>
 
 <div align="center">
