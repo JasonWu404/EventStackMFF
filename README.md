@@ -19,20 +19,54 @@
 All-in-focus imaging is a key computational imaging technique for scenarios that require an extended depth of field, such as industrial inspection, microscopic imaging, autonomous driving, and macro photography. However, existing focal stack fusion methods rely only on static sharpness cues and ignore how focus evolves, which leads to unstable focus localization near depth edges and in heavily blurred regions. Our key observation is that event cameras respond much more strongly in regions where focus changes, so we treat events as additional dynamic focus cues and inject them into focus estimation to improve robustness and accuracy. Building on this idea, we propose EventStackMFF, an event-guided focal stack all-in-focus imaging framework. By constructing a focal plane indexed event stack that explicitly captures the dynamic evolution of focus, EventStackMFF provides stable, fine-grained pixel cues for focus map regression. We further design a two-stage event-guided focus estimation network. The first stage performs intra-layer focus estimation, where a cross modal crossattention module fuses image and event features so that event responses highlight rapidly varying, near-in-focus structures while suppressing defocused backgrounds. The second stage performs interlayer focus estimation with a Depth-Transformer that models long-range dependencies along the focal dimension and produces a focus probability volume over focal indices. Extensive experiments on five public datasets show that EventStackMFF achieves state-of-the-art all-in-focus imaging quality with low computational cost and strong robustness across diverse indoor, outdoor, real, and synthetic scenes, which highlights the potential of event-guided focal stack all-in-focus imaging.
 
 <div align="center">
+  <img src="assets/figure_17.jpg" width="800px"/>
+  <p><b>Coaxial acquisition platform for event cameras and RGB cameras</b></p>
+</div>
+
+<div align="center">
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="assets/telephone_image_stack.gif" width="300"/>
-        <br/><sub>Image stacks</sub>
+        <img src="assets/telephone_image_stack.gif" width="350"/>
+        <br/><sub>Telephone image stacks</sub>
       </td>
       <td align="center" width="50%">
-        <img src="assets/telephone_event_stack.gif" width="300"/>
-        <br/><sub>Event stacks</sub>
+        <img src="assets/telephone_event_stack.gif" width="350"/>
+        <br/><sub>Telephone event stacks</sub>
       </td>
     </tr>
   </table>
 </div>
 
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="assets/keyboard_image_stack.gif" width="350"/>
+        <br/><sub>Keyboard image stacks</sub>
+      </td>
+      <td align="center" width="50%">
+        <img src="assets/keyboard_event_stack.gif" width="350"/>
+        <br/><sub>Keyboard event stacks</sub>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="assets/circuit board_image_stack.gif" width="350"/>
+        <br/><sub>Circuit board image stacks</sub>
+      </td>
+      <td align="center" width="50%">
+        <img src="assets/circuit board_event_stack.gif" width="350"/>
+        <br/><sub>Circuit board event stacks</sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <div align="center">
   <table>
